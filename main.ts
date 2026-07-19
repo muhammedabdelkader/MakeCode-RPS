@@ -26,14 +26,14 @@ input.onButtonPressed(Button.A, function () {
     radio.sendString("s")
     vaiiable_a1 = 0
     basic.showString("S")
-    pauseUntil(() => vaiiable_b1 != -1)
+    pauseUntil(() => vaiiable_b1 > -1)
     radio.sendNumber(1337)
 })
 input.onButtonPressed(Button.AB, function () {
     radio.sendString("r")
     vaiiable_a1 = 1
     basic.showString("R")
-    pauseUntil(() => vaiiable_b1 != -1)
+    pauseUntil(() => vaiiable_b1 > -1)
     radio.sendNumber(1337)
 })
 radio.onReceivedString(function (receivedString) {
@@ -57,7 +57,7 @@ input.onButtonPressed(Button.B, function () {
     radio.sendString("p")
     vaiiable_a1 = 2
     basic.showString("P")
-    pauseUntil(() => vaiiable_b1 != -1)
+    pauseUntil(() => vaiiable_b1 > -1)
     radio.sendNumber(1337)
 })
 input.onGesture(Gesture.Shake, function () {
